@@ -38,7 +38,7 @@ self.driver = webdriver.Chrome(service=self.driver_service)
 
 ## Subtask 3 - Adding a code to my own remote repository
 
-
+- [x] Done
 
 ## Subtask 4
 
