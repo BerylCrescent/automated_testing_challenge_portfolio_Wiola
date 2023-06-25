@@ -12,7 +12,7 @@
 
 Hello, <br>
 My name is Wiola. After completing the previous challenge, [become a manual tester](https://github.com/BerylCrescent/challenge_portfolio_Wiola/tree/main), I decided it's time to take the next step and continue the journey, that started in April. <br>
-I'm ready to leave, said goodbye to my family, and packed my books. I won't need the Necronomicon, but the ISTQB syllabus is necessary. It is the right weapon against monsters. Closing the door, I took one last look at the fridge *- I'll be back, my dear.* <br>
+I'm ready to leave, said goodbye to my family, and packed my books. I won't need the Necronomicon, but the ISTQB syllabus is necessary. It is the right weapon against bugs. Closing the door, I took one last look at the fridge *- I'll be back, my dear.* <br>
 Will I meet any dragons on my way? *Only a python.* <br>
 Will I get lost? *Yes, probably more than once... but isn't that the point? After all, you have to get lost in order to find yourself.* <br>
 Will I manage? *Of course!*
