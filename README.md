@@ -50,7 +50,7 @@ My test score = 12/14 points 👍
 
 ## Subtask 1 - New branch
 
-- [ ] New branch
+- [x] Create a new branch - selectors
 
 ## Subtask 2 - Searching for selectors on the login page
 
