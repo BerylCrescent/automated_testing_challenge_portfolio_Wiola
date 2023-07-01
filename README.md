@@ -3,6 +3,7 @@
 
 ### :point_right: Table of contents
 1. [Task 1](#task-1---software-configuration)
+2. [Task 2](#task-2---selectors)
 <br>
 <br>
 
@@ -17,7 +18,7 @@ Will I meet any dragons on my way? *Only a python.* <br>
 Will I get lost? *Yes, probably more than once... but isn't that the point? After all, you have to get lost in order to find yourself.* <br>
 Will I manage? *Of course!*
 
-*Wiola*
+⚔️ *Wiola*
 
 ## Subtask 2 - Fix the problem displayed on the console
 
@@ -43,3 +44,18 @@ self.driver = webdriver.Chrome(service=self.driver_service)
 ## Subtask 4
 
 My test score = 12/14 points 👍
+
+
+# Task 2 - Selectors
+
+## Subtask 1 - New branch
+
+## Subtask 2 - Searching for selectors on the login page
+
+## Subtask 3 - Adding selectors to a project
+
+## Subtask 4 - Adding a new file
+
+## Subtask 5 - Add a new file -add a match form
+
+## Subtask 6 - Merging branches
