@@ -50,7 +50,62 @@ My test score = 12/14 points 👍
 
 ## Subtask 1 - New branch
 
+- [ ] New branch
+
 ## Subtask 2 - Searching for selectors on the login page
+
+I am testing the [Scouts test](https://scouts-test.futbolkolektyw.pl/en/login?redirected=true) website.
+
++ Scouts_Panel_text_xpath
+
+```python
+- //div/h5
+- //*[@id="__next"]/form/div/div[1]/h5     shorter version ➡️     //form/div/div[1]/h5
+- //*[text()="Scouts Panel"]
+```
+  
++ Login_field_xpath
+
+```python
+- //*[text()="Login"]
+- //input[@id="login"]     shorter version ➡️     //*[@id="login"]
+- //input[@name="login"]
+- //*[@for="login"]
+```
+  
++ Password_field_xpath
+
+```python
+- //input[@type="password"]
+- //input[@id="password"]     shorter version ➡️     //*[@id="password"]
+- //input[@name="password"]
+- //*[text()="Password"]
+- //*[@for="password"]
+```
+
++ Remind_password_hyperlink_xpath
+
+```python
+- //a[text()="Remind password"]
+- //*[*id="__next"]/form/dividiv[1]/a     shorter version ➡️     //form/div/div[1]/a
+- //*[contains(@class, "jss4")]
+```
+  
++ Language_listbox_xpath
+
+```python
+- //*[text()="English"]
+- //*[@id="__next"]/form/div/div[2]/div/div     shorter version ➡️     //form/div/div[2]/div/div
+- //*[contains(@class, "MuiSelect-root")]
+```
++ Sign_in_button_xpath
+
+```python
+- //*[text()="Sign in"]
+- //button[@type="submit"]
+- //*[@id="__next"]/form/div/div[2]/button     shorter version ➡️     //form/div/div[2]/button 
+- //*[contains(@class, "MuiButton-label")]
+```
 
 ## Subtask 3 - Adding selectors to a project
 
@@ -59,3 +114,5 @@ My test score = 12/14 points 👍
 ## Subtask 5 - Add a new file -add a match form
 
 ## Subtask 6 - Merging branches
+
+- [ ] Branch merged
