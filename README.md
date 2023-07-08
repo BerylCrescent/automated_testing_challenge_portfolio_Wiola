@@ -4,6 +4,7 @@
 ### :point_right: Table of contents
 1. [Task 1](#task-1---software-configuration)
 2. [Task 2](#task-2---selectors)
+3. [Task 3](#task-3---first-test-and-assert)
 <br>
 <br>
 
@@ -194,7 +195,17 @@ class AddMatchForm(BasePage):
 ## Subtask 6 - Merging branches
 
 - [x] Branch merged
+<br>
+<br>
 
-<br>
-<br>
-<br>
+# Task 3 - First test and assert
+
+## Subtask 1 - Completing the login page
+
+## Subtask 2 - A new test case
+
+## Subtask 3 - Assert
+
+## Subtask 4 - Repeating what we already know
+
+## Subtask 5 - Optional task
