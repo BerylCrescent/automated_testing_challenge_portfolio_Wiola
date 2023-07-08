@@ -200,7 +200,20 @@ class AddMatchForm(BasePage):
 
 # Task 3 - First test and assert
 
+Assertion exercise record avaliable [here](https://drive.google.com/file/d/1BBMni_vzRzv2dJ4oQUMGR1-Scl8uCBT2/view?usp=sharing)
+
 ## Subtask 1 - Completing the login page
+
+The login_page.py file was updated by adding the following methods:
+
+```python
+
+    def type_in_password(self, password):
+        self.field_send_keys(self.password_field_xpath, password)
+
+    def click_on_the_sign_in_button(self):
+        self.click_on_the_element(self.sign_in_button_xpath)
+```
 
 ## Subtask 2 - A new test case
 
