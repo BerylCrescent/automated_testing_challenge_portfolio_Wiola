@@ -33,6 +33,3 @@ class Dashboard(BasePage):
 
     def click_add_player_button(self):
         self.click_on_the_element(self.add_player_xpath)
-
-    # def assert_element(self):
-    #   self.assert_element_text() ==

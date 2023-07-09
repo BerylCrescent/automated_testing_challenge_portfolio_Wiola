@@ -1,3 +1,6 @@
+#import time
+
+
 from pages.base_page import BasePage
 
 
@@ -10,6 +13,7 @@ class LoginPage(BasePage):
     scouts_panel_text_xpath = "//form/div/div[1]/h5"
     login_url = ('https://scouts-test.futbolkolektyw.pl/en')
     expected_title = 'Scouts panel - sign in'
+    expected_text = 'Scout Panel'
 
 
     def type_in_email(self, email):
@@ -23,3 +27,7 @@ class LoginPage(BasePage):
 
     def title_of_page(self):
         assert self.get_page_title(self.login_url) == self.expected_title
+
+    #def assert_element(self):
+        #time.sleep(1)
+        #self.assert_element_text(self.driver, self.scouts_panel_text_xpath, self.expected_text)
