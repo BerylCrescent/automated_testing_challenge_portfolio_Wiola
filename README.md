@@ -218,7 +218,7 @@ The login_page.py file was updated by adding the following methods:
 ## Subtask 2 - A new test case
 
 Subtask 2 record avaliable [here](https://drive.google.com/file/d/1a0NV3_SBnXTsitIahK0xjYFoxPggTQbH/view?usp=sharing) <br>
-The login_page.py file was created. I used the following script:
+The login_to_the_system.py file was created. I used the following script:
 
 ```python
 import os
@@ -240,6 +240,7 @@ class TestLoginPage(unittest.TestCase):
         self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
+
     def test_log_in_to_the_system(self):
         user_login = LoginPage(self.driver)
         user_login.type_in_email('user09@getnada.com')
@@ -259,8 +260,50 @@ Also, this tricky bastard was added:
 from pages.login_page import LoginPage
 ```
 
+Test passed - the methods filled in the proper fields, therefore we were logged in and could see the dashboard.
+
 ## Subtask 3 - Assert
+
+Subtask 3 record avaliable [here](https://drive.google.com/file/d/1uZijXXpaqzvjtxBFaG1kbbwwufd6bLTo/view?usp=sharing)
+<br>
+
+The following was added to BasePage:
+```python
+    def get_page_title(self, url):
+        self.driver.get(url)
+        return self.driver.title
+```
+
+Is dashboard title and login page correct?
+Test passed - the assertion returned true.
+
+
 
 ## Subtask 4 - Repeating what we already know
 
+Subtask 4 record avaliable [here](https://drive.google.com/file/d/12Z0AuWspXl2e_QFJUEKJJxITODsnjCoG/view?usp=sharing)
+<br>
+
+For this task, add_player_page.py and add_player.py test were created. <br>
+The test passed - the assertion returned true.
+
+
 ## Subtask 5 - Optional task
+
+Subtask 5 record avaliable [here](https://drive.google.com/file/d/1_ux3eFw6md3jmPlcboA6Hvt_7xKCQ9L9/view?usp=sharing)
+<br>
+The test failed because self.scouts_panel_text_xpath != self.expected_text
+
+My solution in login_page.py
+
+```python
+def assert_element(self):
+        time.sleep(1)
+        self.assert_element_text(self.driver, self.scouts_panel_text_xpath, self.expected_text)
+```
+
+And in login_to_the_system.py test:
+
+```python
+user_login.assert_element()
+```
