@@ -13,7 +13,7 @@ class LoginPage(BasePage):
     scouts_panel_text_xpath = "//form/div/div[1]/h5"
     login_url = ('https://scouts-test.futbolkolektyw.pl/en')
     expected_title = 'Scouts panel - sign in'
-    expected_text = 'Scout Panel'
+    expected_text = 'Scouts Panel'
 
 
     def type_in_email(self, email):
