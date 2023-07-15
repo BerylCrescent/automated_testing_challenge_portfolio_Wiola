@@ -320,13 +320,24 @@ Record avaliable [here](https://drive.google.com/file/d/1NP7kZW5NVVKaejFjs0LZYyq
 
 # Task 4 - Refactoring, debugger and test cases
 
-In this task, I created test cases and automated tests for them
+In this task, I created test cases and automated tests for them. <br>
+Prework recording with wait method added avaliable [here](https://drive.google.com/file/d/116vlCvjttaf5d7gcS0IHmrBO0B4lloJd/view?usp=sharing)
 
 ## Subtask 1 - Writing test cases
+
+Link to the test cases prepared for this task.
 
 ## Subtask 2 - Writing code based on test cases
 
 ## Subtask 3 - Adding recordings from tests to Google Drive
+
+Recordings prepared for this task:
+- Test Case 1
+- Test Case 2
+- Test Case 3
+- Test Case 4
+- Test Case 5
+
 
 ## Subtask 4 - Screenshot method and test report - for volunteers and groups
 
