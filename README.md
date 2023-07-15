@@ -5,6 +5,7 @@
 1. [Task 1](#task-1---software-configuration)
 2. [Task 2](#task-2---selectors)
 3. [Task 3](#task-3---first-test-and-assert)
+4. [Task 4](#task-4---refactoring-debugger-and-test-cases)
 <br>
 <br>
 
@@ -307,3 +308,26 @@ And in login_to_the_system.py test:
 ```python
 user_login.assert_element()
 ```
+<br>
+The test failed because there happened to be an error in the subtask, a typo - expected_text was 'Scout Panel' insted of 'Scouts Panel'. <br>
+The test passed after correcting the typo.<br>
+Record avaliable here.
+
+
+
+<br>
+<br>
+
+# Task 4 - Refactoring, debugger and test cases
+
+In this task, I created test cases and automated tests for them
+
+## Subtask 1 - Writing test cases
+
+## Subtask 2 - Writing code based on test cases
+
+## Subtask 3 - Adding recordings from tests to Google Drive
+
+## Subtask 4 - Screenshot method and test report - for volunteers and groups
+
+## Subtask 5 - For volunteers - if else construction
