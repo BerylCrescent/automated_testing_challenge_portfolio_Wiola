@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 from pages.login_page import LoginPage
-from pages.dashboard import Dashboard
+from pages.dashboard_page import Dashboard
 from pages.add_player_page import AddPlayer
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 

@@ -28,7 +28,7 @@ class Dashboard(BasePage):
 
 
     def title_of_page(self):
-        time.sleep(5)
+        self.wait_for_element_to_be_clickable(self.scouts_panel_logo_xpath)
         assert self.get_page_title(self.dashboard_url) == self.expected_title
 
     def click_add_player_button(self):
