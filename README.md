@@ -309,10 +309,10 @@ And in login_to_the_system.py test:
 user_login.assert_element()
 ```
 <br>
+
 The test failed because there happened to be an error in the subtask, a typo - expected_text was 'Scout Panel' insted of 'Scouts Panel'. <br>
 The test passed after correcting the typo.<br>
 Record avaliable [here](https://drive.google.com/file/d/1NP7kZW5NVVKaejFjs0LZYyqi-T1DFf6B/view?usp=sharing)
-
 
 
 <br>
