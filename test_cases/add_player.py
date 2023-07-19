@@ -29,11 +29,32 @@ class TestAddPlayerPage(unittest.TestCase):
         user_login.type_in_password('Test-1234')
         user_login.click_on_the_sign_in_button()
         dashboard_page = Dashboard(self.driver)
-        time.sleep(3)
+        dashboard_page.title_of_page()
         dashboard_page.click_add_player_button()
         add_player_page = AddPlayer(self.driver)
         add_player_page.title_of_page()
-        time.sleep(2)
+        add_player_page.type_in_email('kettlehead@vp.pl')
+        add_player_page.type_in_name('Michael')
+        add_player_page.type_in_surname('Kelso')
+        add_player_page.type_in_phone('500555005')
+        add_player_page.type_in_weight('55')
+        add_player_page.type_in_height('182')
+        add_player_page.type_in_club('Point Place')
+        add_player_page.type_in_second_position('Officer')
+        add_player_page.click_leg_select()
+        add_player_page.click_district_select()
+        add_player_page.type_in_main_position('Kettlehead')
+        add_player_page.type_in_age('11.11.2011')
+        add_player_page.click_submit_button()
+        add_player_page.click_main_page()
+        add_player_page.screen_shot_plz('TC_05-1.png')
+        dashboard_page = Dashboard(self.driver)
+        dashboard_page.title_of_page()
+        dashboard_page.screen_shot_plz('TC_05-2.png')
+
+
+
+
 
     @classmethod
     def tearDown(self):
