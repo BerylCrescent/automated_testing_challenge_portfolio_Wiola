@@ -325,20 +325,38 @@ Prework recording with wait method added avaliable [here](https://drive.google.c
 
 ## Subtask 1 - Writing test cases
 
-Link to the test cases prepared for this task.
+[Link](https://docs.google.com/spreadsheets/d/148mOoML0UUtxGtexcV5bTFZzoWZsKeKl/edit?usp=sharing&ouid=100493076818843703891&rtpof=true&sd=true) to the test cases prepared for this task - 7 in total.
 
 ## Subtask 2 - Writing code based on test cases
+
+- [x] The code was written
 
 ## Subtask 3 - Adding recordings from tests to Google Drive
 
 Recordings prepared for this task:
-- Test Case 1
-- Test Case 2
-- Test Case 3
-- Test Case 4
-- Test Case 5
+- [Test Case 1](https://drive.google.com/file/d/1vMC6wUgpvaIHDovrfzftQKAAKKPP9lcI/view?usp=sharing)
+- [Test Case 2](https://drive.google.com/file/d/1q83psKzicdMGDT88wC1P5SFxcQEqEYnQ/view?usp=sharing)
+- [Test Case 3](https://drive.google.com/file/d/1851OgslSgySbXNMcFlehgmyhVh7MHWWp/view?usp=sharing)
+- [Test Case 4](https://drive.google.com/file/d/1t_6ZJ8wA5GZCBNjAExkTA0v9VfU57iQT/view?usp=sharing)
+- [Test Case 5](https://drive.google.com/file/d/1A4QKa-sk907olZ-KQ4kiJIPVHiavcg0D/view?usp=sharing)
+- [Test Case 6](https://drive.google.com/file/d/1ln3QOPUo6HTsXxvl72t0rM4CkYtQsgHo/view?usp=sharing)
+- [Test Case 7](https://drive.google.com/file/d/1Pt6iueaahUNCJA8Hpz4tkGa9gp42ZRYe/view?usp=sharing)
 
 
 ## Subtask 4 - Screenshot method and test report - for volunteers and groups
 
+Reports (.html) avaliable in the documentation.
+
+As for the screenshot method - the following code was added:
+
+```python
+
+def screen_shot_plz(self, apngfile):
+        self.driver.get_screenshot_as_file(apngfile)
+
+```
+
 ## Subtask 5 - For volunteers - if else construction
+
+Time is my sworn enemy, but I will succeed ⚔️
+This subtask will not stay empty for too long
