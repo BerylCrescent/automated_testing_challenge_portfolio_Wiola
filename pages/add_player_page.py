@@ -91,5 +91,5 @@ class AddPlayer(BasePage):
         self.click_on_the_element(self.district_field_xpath)
         self.click_on_the_element(self.district_field_dolnoslaskie_xpath)
 
-    def visibility_of_element_located(self, selector, selector_type=By.XPATH):
-        self
+    #def visibility_of_element_located(self, selector, selector_type=By.XPATH):
+        #self
