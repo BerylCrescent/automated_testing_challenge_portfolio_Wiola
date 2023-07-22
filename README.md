@@ -6,6 +6,7 @@
 2. [Task 2](#task-2---selectors)
 3. [Task 3](#task-3---first-test-and-assert)
 4. [Task 4](#task-4---refactoring-debugger-and-test-cases)
+5. [Task 5](#task-5---robot-framework)
 <br>
 <br>
 
@@ -345,7 +346,15 @@ Recordings prepared for this task:
 
 ## Subtask 4 - Screenshot method and test report - for volunteers and groups
 
-Reports (.html) avaliable in the documentation.
+Reports (.html) avaliable [here](https://drive.google.com/drive/folders/1Hc0N68ikJ8-p49pe77dPGQJ8_LobaWUp?usp=drive_link).
+When opened by Google Docs, the file looks decent, however I prefer the browser:
+- Report TC_01 [screenshot](https://drive.google.com/file/d/1YtePXbh7_npB1xKj925y11Slyn6JLWFp/view?usp=drive_link)
+- Report TC_02 [screenshot](https://drive.google.com/file/d/1BkoOy6PxpBix_niGPn85-1CcEU8I4411/view?usp=drive_link)
+- Report TC_03 [screenshot](https://drive.google.com/file/d/1wdHb49U_R1yLdLXZG4yj3MsG8ANqVR05/view?usp=drive_link)
+- Report TC_04 [screenshot](https://drive.google.com/file/d/1GRE9ABF6xYyh18QG4e8pjYa3uf4S_s6M/view?usp=drive_link)
+- Report TC_05 [screenshot](https://drive.google.com/file/d/1uoWxAhQ0ZgeL3soUsbSgB_n88RSdDqdp/view?usp=drive_link)
+- Report TC_06 [screenshot](https://drive.google.com/file/d/1jhuGzJH9rUOYk2nAHRguCzgYGoN85H9l/view?usp=drive_link)
+- Report TC_07 [screenshot](https://drive.google.com/file/d/1WkNu5use4Ii0L2UKLmlbjnH11fPxgnYA/view?usp=drive_link)
 
 As for the screenshot method - the following code was added:
 
@@ -360,3 +369,10 @@ def screen_shot_plz(self, apngfile):
 
 Time is my sworn enemy, but I will succeed ⚔️
 This subtask will not stay empty for too long
+
+<br>
+<br>
+
+# Task 5 - Robot Framework
+
+## Subtask 1
