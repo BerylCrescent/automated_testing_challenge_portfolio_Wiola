@@ -33,7 +33,7 @@ class TestPlayersPage(unittest.TestCase):
         dashboard_page.click_players()
         players_page = PlayersPage(self.driver)
         #players_page.search_name('Eric')
-        #players_page.screen_shot_plz('Players.png')
+        #players_page.screen_shot_plz('')
         #search in the filters table
 
 

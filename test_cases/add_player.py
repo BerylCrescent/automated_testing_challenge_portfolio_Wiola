@@ -50,11 +50,17 @@ class TestAddPlayerPage(unittest.TestCase):
         add_player_page.screen_shot_plz('TC_05-1.png')
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
+        #dashboard_page.activity_last_created_player()
         dashboard_page.screen_shot_plz('TC_05-2.png')
 
-
-
-
+    #def test_last_created_player(self):
+        #user_login = LoginPage(self.driver)
+        #user_login.type_in_email('user09@getnada.com')
+        #user_login.type_in_password('Test-1234')
+        #user_login.click_on_the_sign_in_button()
+        #dashboard_page = Dashboard(self.driver)
+        #dashboard_page.activity_last_created_player()
+        #does not work... see why
 
     @classmethod
     def tearDown(self):

@@ -46,3 +46,7 @@ class BasePage():
         element = wait.until(EC.visibility_of_element_located((selector_type, selector)))
         #remind_password_page
 
+    def find_created_player(self, selector, selector_type=By.XPATH):
+        return self.driver.find_element(selector_type, selector)
+        #dashboard_page but does not work
+

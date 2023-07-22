@@ -31,7 +31,7 @@ class TestRemindPasswordLink(unittest.TestCase):
         remind_password_page.screen_shot_plz('TC_08-1')
         remind_password_page.type_in_email('user09@getnada.com')
         remind_password_page.click_on_the_send_button()
-        #add method to check if send was succesful
+        #add method to check if send was succesful - how to check popup notification
         remind_password_page.click_on_back_to_sign_in()
         user_login = LoginPage(self.driver)
         user_login.title_of_page()

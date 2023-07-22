@@ -7,6 +7,7 @@ from pages.base_page import BasePage
 
 class AddPlayer(BasePage):
     achievements_field_xpath = "//input[@name='achievements']"
+    add_player_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
     add_language_button_xpath = "//button[@aria-label='Add language']"
     add_link_yt_button_xpath = "//button[@aria-label='Add link to Youtube']"
     add_player_title_xpath = "//span[text()='Add player']"
@@ -38,7 +39,6 @@ class AddPlayer(BasePage):
     web_laczy_field_xpath = "//input[@name='webLaczy']"
     weight_field_xpath = "//input[@name='weight']"
     expected_title = 'Add player'
-    add_player_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
 
     def title_of_page(self):
         self.wait_for_element_to_be_clickable(self.submit_button_xpath)
