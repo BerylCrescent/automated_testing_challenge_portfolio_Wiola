@@ -375,6 +375,8 @@ This subtask will not stay empty for too long
 
 # Task 5 - Robot Framework
 
+Test Suite [link](https://drive.google.com/file/d/1GEcVJYItZNbQNKZrjFyITlg-nuz4diLE/view?usp=sharing) 
+
 - [x] Create a new [repository](https://github.com/BerylCrescent/ScoutsTest_robotframework/tree/main)
 - [x] All tests from previous projects have been rewritten to Robot Framework
 
