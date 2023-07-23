@@ -375,4 +375,14 @@ This subtask will not stay empty for too long
 
 # Task 5 - Robot Framework
 
+- [x] Create a new [repository](https://github.com/BerylCrescent/ScoutsTest_robotframework/tree/main)
+- [x] All tests from previous projects have been rewritten to Robot Framework
+
 ## Subtask 1
+
+This subtask is avaliable in the new repository. </br>
+Test records are avaliable [here](https://drive.google.com/drive/folders/1oh-bwt7Y9L9SIPH4Z8QN_vzt3XYTJRNq?usp=sharing)
+
+
+
+
