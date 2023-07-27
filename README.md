@@ -7,6 +7,7 @@
 3. [Task 3](#task-3---first-test-and-assert)
 4. [Task 4](#task-4---refactoring-debugger-and-test-cases)
 5. [Task 5](#task-5---robot-framework)
+6. [Task 6](#task-6---bug-reporting-and-test-report)
 <br>
 <br>
 
@@ -386,5 +387,29 @@ This subtask is avaliable in the new repository. </br>
 Test records are avaliable [here](https://drive.google.com/drive/folders/1oh-bwt7Y9L9SIPH4Z8QN_vzt3XYTJRNq?usp=sharing)
 
 
+# Task 6 - Bug reporting and test report
 
+## Subtask 1 - Change of environment
+
+Until now, we worked here:
+https://scouts-test.futbolkolektyw.pl/en/
+<br>
+For this task, we need to change our environment - https://scouts.futbolkolektyw.pl/en/ - and redo the tests. 
+
+
+## Subtask 2 - Bug reporting
+
+- [x] Create a template for reporting bugs
+- [ ] Add a link 
+
+## Subtask 3 - Test report
+
+- [x] Create a template for the report
+- [ ] Add a link
+
+## Subtask 4 - Create a portfolio
+
+- [x] Create a new repository for your portfolio
+
+Well, thanks to the previous challenge - Become a Manual Tester - I already have a [portfolio](https://github.com/BerylCrescent/Portfolio) created. 
 
