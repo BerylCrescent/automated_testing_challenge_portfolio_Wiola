@@ -15,6 +15,7 @@ class RemindPasswordPage(BasePage):
     remind_password_url = "https://scouts-test.futbolkolektyw.pl/en/remind"
     send_button_xpath = "//button[@type='submit']"
     expected_title = 'Remind password'
+    notification_popup_eng_xpath = "//*[text()='Message sent successfully.']"
 
 
     def type_in_email(self, email):
@@ -35,3 +36,5 @@ class RemindPasswordPage(BasePage):
     def element_located(self):
         self.visibility_of_element_located(self.send_button_xpath)
 
+    def popup_located(self):
+        self.visibility_of_element_located(self.notification_popup_eng_xpath)

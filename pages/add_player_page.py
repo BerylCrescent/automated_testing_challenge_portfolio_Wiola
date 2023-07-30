@@ -9,7 +9,9 @@ class AddPlayer(BasePage):
     achievements_field_xpath = "//input[@name='achievements']"
     add_player_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
     add_language_button_xpath = "//button[@aria-label='Add language']"
+    add_language_input_xpath = "//input[@name='languages[0]']"
     add_link_yt_button_xpath = "//button[@aria-label='Add link to Youtube']"
+    add_link_yt_input_xpath = "//input[@name='webYT[0]']"
     add_player_title_xpath = "//span[text()='Add player']"
     age_field_xpath = "//input[@name='age']"
     clear_button_xpath = "//span[text()='Clear']"
@@ -25,6 +27,8 @@ class AddPlayer(BasePage):
     main_page_xpath = "//span[text()='Main page']"
     main_position_field_xpath = "//input[@name='mainPosition']"
     name_field_xpath = "//input[@name='name']"
+    notification_redirect_eng_xpath = "//*[text()='Redirect to edit page']"
+    notification_saved_eng_xpath = "//*[text()='Added player.']"
     phone_field_xpath = "//input[@name='phone']"
     players_xpath = "//span[text()='Players']"
     polski_language_xpath = "//span[text()='Polski']"
@@ -39,6 +43,7 @@ class AddPlayer(BasePage):
     web_laczy_field_xpath = "//input[@name='webLaczy']"
     weight_field_xpath = "//input[@name='weight']"
     expected_title = 'Add player'
+
 
     def title_of_page(self):
         self.wait_for_element_to_be_clickable(self.submit_button_xpath)
@@ -91,5 +96,31 @@ class AddPlayer(BasePage):
         self.click_on_the_element(self.district_field_xpath)
         self.click_on_the_element(self.district_field_dolnoslaskie_xpath)
 
-    #def visibility_of_element_located(self, selector, selector_type=By.XPATH):
-        #self
+    def popup_located(self):
+        self.visibility_of_element_located(self.notification_saved_eng_xpath)
+        self.visibility_of_element_located(self.notification_redirect_eng_xpath)
+
+    def type_in_level(self, level):
+        self.field_send_keys(self.level_field_xpath, level)
+
+    def type_in_achievements(self, ach):
+        self.field_send_keys(self.achievements_field_xpath, ach)
+
+    def type_in_language(self, lang):
+        self.click_on_the_element(self.add_language_button_xpath)
+        self.field_send_keys(self.add_language_input_xpath, lang)
+
+    def type_in_laczy(self, laczy):
+        self.field_send_keys(self.web_laczy_field_xpath, laczy)
+
+    def type_in_90(self, web_90):
+        self.field_send_keys(self.web_90_field_xpath, web_90)
+
+    def type_in_fb(self, fb):
+        self.field_send_keys(self.web_fb_field_xpath, fb)
+
+    def type_in_youtube(self, rickroll):
+        self.click_on_the_element(self.add_link_yt_button_xpath)
+        self.field_send_keys(self.add_link_yt_input_xpath, rickroll)
+
+

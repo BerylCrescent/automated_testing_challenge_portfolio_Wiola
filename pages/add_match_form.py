@@ -21,4 +21,4 @@ class AddMatchForm(BasePage):
     sign_out_button_xpath = "//span[text()='Sign out']"
     submit_button_xpath = "//button[@type='submit']"
     tshirt_color_field_xpath = "//input[@name='tshirt']"
-    pass
+

@@ -5,9 +5,11 @@ from pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
+    ident_or_pass_invalid_xpath = "//*[contains(text(),'Identifier')]"
     language_listbox_xpath = "//form/div/div[2]/div/div"
     login_error_notification_xpath = '//form/div/div[1]/div[3]/span'
     login_field_xpath = "//*[@id='login']"
+    notify_password_email_xpath = "//*[contains(text(),'Please')]"
     password_field_xpath = "//*[@id='password']"
     przypomnij_hasło_hyperlink_xpath = "//a[text()='Przypomnij hasło']"
     remind_password_hyperlink_xpath = "//a[text()='Remind password']"
@@ -16,7 +18,6 @@ class LoginPage(BasePage):
     login_url = 'https://scouts-test.futbolkolektyw.pl/en'
     expected_title = 'Scouts panel - sign in'
     expected_text = 'Scouts Panel'
-    expected_error = 'Identifier or password invalid.'
 
 
     def type_in_email(self, email):
@@ -44,3 +45,9 @@ class LoginPage(BasePage):
 
     def screen_shot_plz(self, apngfile):
         self.driver.get_screenshot_as_file(apngfile)
+
+    def please_provide_notification_located(self):
+        self.visibility_of_element_located(self.notify_password_email_xpath)
+
+    def identifier_notification_located(self):
+        self.visibility_of_element_located(self.ident_or_pass_invalid_xpath)

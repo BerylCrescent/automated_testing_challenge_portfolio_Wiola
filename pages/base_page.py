@@ -35,18 +35,16 @@ class BasePage():
         element = driver.find_element(by=By.XPATH, value=xpath)
         element_text = element.text
         assert expected_text == element_text
+        #login page
 
     def wait_for_element_to_be_clickable(self, selector, selector_type=By.XPATH):
         wait = WebDriverWait(self.driver, 10)
-        element = wait.until(EC.element_to_be_clickable((selector_type, selector)))
+        wait.until(EC.element_to_be_clickable((selector_type, selector)))
         #login page
 
     def visibility_of_element_located(self, selector, selector_type=By.XPATH):
         wait = WebDriverWait(self.driver, 10)
-        element = wait.until(EC.visibility_of_element_located((selector_type, selector)))
+        wait.until(EC.visibility_of_element_located((selector_type, selector)))
         #remind_password_page
 
-    def find_created_player(self, selector, selector_type=By.XPATH):
-        return self.driver.find_element(selector_type, selector)
-        #dashboard_page but does not work
 

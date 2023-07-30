@@ -10,7 +10,7 @@ from pages.remind_password_page import RemindPasswordPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestRemindPasswordLink(unittest.TestCase):
+class TestRemindPassword(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -28,12 +28,12 @@ class TestRemindPasswordLink(unittest.TestCase):
         remind_password_page = RemindPasswordPage(self.driver)
         remind_password_page.title_of_page()
         remind_password_page.element_located()
-        remind_password_page.screen_shot_plz('TC_08-1')
+        remind_password_page.screen_shot_plz('TC_08-1.png')
         remind_password_page.type_in_email('user09@getnada.com')
         remind_password_page.click_on_the_send_button()
-        #add method to check if send was succesful - how to check popup notification
+        remind_password_page.popup_located()
         remind_password_page.click_on_back_to_sign_in()
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
-        remind_password_page.screen_shot_plz('TC_08-2')
+        remind_password_page.screen_shot_plz('TC_08-2.png')
 

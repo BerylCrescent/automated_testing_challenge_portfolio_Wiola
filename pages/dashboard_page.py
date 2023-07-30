@@ -26,7 +26,8 @@ class Dashboard(BasePage):
     sign_out_button_xpath = "//span[text()='Sign out']"
     dashboard_url = 'https://scouts-test.futbolkolektyw.pl/'
     expected_title = 'Scouts panel'
-    created_player = 'Michael Kelso'
+    created_player_xpath = "//*[contains(text(),'Michael Kelso')]"
+    expected_player = 'Michael Kelso'
 
 
     def title_of_page(self):
@@ -45,12 +46,7 @@ class Dashboard(BasePage):
     def screen_shot_plz(self, apngfile):
         self.driver.get_screenshot_as_file(apngfile)
 
-    #def activity_last_created_player(self):
-        #self.wait_for_element_to_be_clickable(self.scouts_panel_logo_xpath)
-        #time.sleep(2)
-        #new_player = self.find_created_player(self.last_created_player_hyperlink_xpath).text
-        #assert self.created_player == new_player
-    #Does not work... see why?
+
 
 
 

@@ -45,22 +45,22 @@ class TestAddPlayerPage(unittest.TestCase):
         add_player_page.click_district_select()
         add_player_page.type_in_main_position('Kettlehead')
         add_player_page.type_in_age('11.11.2011')
+        add_player_page.type_in_level('None')
+        add_player_page.type_in_achievements('None')
+        add_player_page.type_in_language('Polish')
+        add_player_page.type_in_laczy('Tak')
+        add_player_page.type_in_90('Też')
+        add_player_page.type_in_fb('To może nie')
+        add_player_page.type_in_youtube('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
         add_player_page.click_submit_button()
+        add_player_page.popup_located()
         add_player_page.click_main_page()
         add_player_page.screen_shot_plz('TC_05-1.png')
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
-        #dashboard_page.activity_last_created_player()
         dashboard_page.screen_shot_plz('TC_05-2.png')
 
-    #def test_last_created_player(self):
-        #user_login = LoginPage(self.driver)
-        #user_login.type_in_email('user09@getnada.com')
-        #user_login.type_in_password('Test-1234')
-        #user_login.click_on_the_sign_in_button()
-        #dashboard_page = Dashboard(self.driver)
-        #dashboard_page.activity_last_created_player()
-        #does not work... see why
+
 
     @classmethod
     def tearDown(self):
