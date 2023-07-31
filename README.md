@@ -368,8 +368,7 @@ def screen_shot_plz(self, apngfile):
 
 ## Subtask 5 - For volunteers - if else construction
 
-Time is my sworn enemy, but I will succeed ⚔️
-This subtask will not stay empty for too long
+The recording is avaliable [here](https://drive.google.com/file/d/16M1M53m04P1w4DJG2QMbjE49Kg2oEpgf/view?usp=drive_link)
 
 <br>
 <br>
