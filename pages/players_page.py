@@ -46,7 +46,8 @@ class PlayersPage(BasePage):
     table_rating_xpath = "//div/div[text()='Rating']"
     table_reports_xpath = "//th/div[text()='Reports']"
     view_columns_button_xpath = "//*[@title='View Columns']"
-    players_page_url = "https://scouts-test.futbolkolektyw.pl/en/players"
+    #players_page_url = "https://scouts-test.futbolkolektyw.pl/en/players"
+    players_page_url = 'https://dareit.futbolkolektyw.pl/en/players'
     expected_title = "Players"
 
 

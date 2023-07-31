@@ -12,7 +12,8 @@ class RemindPasswordPage(BasePage):
     change_language_english_xpath = "//div[@role='button']"
     email_field_xpath = "//input[@name='email']"
     remind_password_head_xpath = "//h5[text()='Remind password']"
-    remind_password_url = "https://scouts-test.futbolkolektyw.pl/en/remind"
+    #remind_password_url = "https://scouts-test.futbolkolektyw.pl/en/remind"
+    remind_password_url = 'https://dareit.futbolkolektyw.pl/en/remind'
     send_button_xpath = "//button[@type='submit']"
     expected_title = 'Remind password'
     notification_popup_eng_xpath = "//*[text()='Message sent successfully.']"

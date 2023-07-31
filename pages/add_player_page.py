@@ -7,7 +7,8 @@ from pages.base_page import BasePage
 
 class AddPlayer(BasePage):
     achievements_field_xpath = "//input[@name='achievements']"
-    add_player_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
+    #add_player_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
+    add_player_url = 'https://dareit.futbolkolektyw.pl/en/players/add'
     add_language_button_xpath = "//button[@aria-label='Add language']"
     add_language_input_xpath = "//input[@name='languages[0]']"
     add_link_yt_button_xpath = "//button[@aria-label='Add link to Youtube']"

@@ -17,8 +17,10 @@ class LoginPage(BasePage):
     remind_password_hyperlink_xpath = "//a[text()='Remind password']"
     scouts_panel_text_xpath = "//form/div/div[1]/h5"
     sign_in_button_xpath = "//button[@type='submit']"
-    login_url = 'https://scouts-test.futbolkolektyw.pl/en'
-    login_url_pl = 'https://scouts-test.futbolkolektyw.pl/pl'
+    #login_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    login_url = 'https://dareit.futbolkolektyw.pl/'
+    #login_url_pl = 'https://scouts-test.futbolkolektyw.pl/pl'
+    login_url_pl = 'https://dareit.futbolkolektyw.pl/en'
     expected_title = 'Scouts panel - sign in'
     expected_polish_title = 'Scouts panel - zaloguj'
     expected_text = 'Scouts Panel'

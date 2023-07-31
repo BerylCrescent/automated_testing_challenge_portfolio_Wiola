@@ -24,7 +24,8 @@ class Dashboard(BasePage):
     scouts_panel_logo_xpath = "//div[@title='Logo Scouts Panel']"
     shortcuts_panel_xpath = "//h2[text()='Shortcuts']"
     sign_out_button_xpath = "//span[text()='Sign out']"
-    dashboard_url = 'https://scouts-test.futbolkolektyw.pl/'
+    #dashboard_url = 'https://scouts-test.futbolkolektyw.pl/'
+    dashboard_url = 'https://dareit.futbolkolektyw.pl/en/'
     expected_title = 'Scouts panel'
     created_player_xpath = "//*[contains(text(),'Michael Kelso')]"
     expected_player = 'Michael Kelso'
