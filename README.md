@@ -369,8 +369,8 @@ def screen_shot_plz(self, apngfile):
 ## Subtask 5 - For volunteers - if else construction
 
 The recording is avaliable [here](https://drive.google.com/file/d/16M1M53m04P1w4DJG2QMbjE49Kg2oEpgf/view?usp=drive_link)
+😀
 
-<br>
 <br>
 
 # Task 5 - Robot Framework
@@ -393,7 +393,7 @@ Test records are avaliable [here](https://drive.google.com/drive/folders/1oh-bwt
 Until now, we worked here:
 https://scouts-test.futbolkolektyw.pl/en/
 <br>
-For this task, we need to change our environment - https://scouts.futbolkolektyw.pl/en/ - and redo the tests. 
+For this task, we need some change - https://dareit.futbolkolektyw.pl/ - and redo the tests on the stage environment of our app. 
 
 
 ## Subtask 2 - Bug reporting
