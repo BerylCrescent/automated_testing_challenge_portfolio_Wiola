@@ -1,4 +1,4 @@
-#import time
+import time
 
 
 from pages.base_page import BasePage
@@ -6,7 +6,9 @@ from pages.base_page import BasePage
 
 class LoginPage(BasePage):
     ident_or_pass_invalid_xpath = "//*[contains(text(),'Identifier')]"
-    language_listbox_xpath = "//form/div/div[2]/div/div"
+    language_listbox_xpath = "//div[@aria-haspopup='listbox']"
+    language_list_english_xpath = "//li[@data-value='en']"
+    language_list_polish_xpath = "//li[@data-value='pl']"
     login_error_notification_xpath = '//form/div/div[1]/div[3]/span'
     login_field_xpath = "//*[@id='login']"
     notify_password_email_xpath = "//*[contains(text(),'Please')]"
@@ -16,8 +18,12 @@ class LoginPage(BasePage):
     scouts_panel_text_xpath = "//form/div/div[1]/h5"
     sign_in_button_xpath = "//button[@type='submit']"
     login_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    login_url_pl = 'https://scouts-test.futbolkolektyw.pl/pl'
     expected_title = 'Scouts panel - sign in'
+    expected_polish_title = 'Scouts panel - zaloguj'
     expected_text = 'Scouts Panel'
+    expected_english = 'Remind password'
+    expected_polish = 'Przypomnij hasło'
 
 
     def type_in_email(self, email):
@@ -51,3 +57,17 @@ class LoginPage(BasePage):
 
     def identifier_notification_located(self):
         self.visibility_of_element_located(self.ident_or_pass_invalid_xpath)
+
+    def select_language(self, language):
+        self.click_on_the_element(self.language_listbox_xpath)
+        self.visibility_of_element_located(self.language_list_english_xpath)
+        if language == 'english':
+            self.click_on_the_element(self.language_list_english_xpath)
+            print('\nenglish')
+        elif language == 'polish':
+            self.click_on_the_element(self.language_list_polish_xpath)
+            print('\npolish')
+            # I know that else should do the trick, but I prefer it this way
+
+
+
