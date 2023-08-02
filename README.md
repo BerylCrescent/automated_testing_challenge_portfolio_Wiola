@@ -395,7 +395,8 @@ https://scouts-test.futbolkolektyw.pl/en/
 <br>
 For this task, we need some change - https://dareit.futbolkolektyw.pl/ - and redo the tests on the stage environment of our app. 
 
-For the sake of capturing any occuring bugs on screenshots time.sleep() was added.
+For the sake of capturing any occuring bugs on screenshots time.sleep() was added. <br>
+[Link](https://docs.google.com/spreadsheets/d/1MxS2bTjNevnrcf9vLgro9191d_uy7P3g/edit#gid=1461388802) for the Test cases.
 
 
 ## Subtask 2 - Bug reporting
@@ -403,7 +404,7 @@ For the sake of capturing any occuring bugs on screenshots time.sleep() was adde
 - [x] Create a template for reporting bugs
 - [x] Add a link
 
-[Here](https://docs.google.com/spreadsheets/d/1MxS2bTjNevnrcf9vLgro9191d_uy7P3g/edit#gid=1461388802) you can find the file, where I store bug reports - each bug has it's own sheet. Also, I added an actual result in every step of my bug report - it is not necessary, but I find it useful.
+[Here](https://docs.google.com/spreadsheets/d/1tnZP_O4EirXwucyyMgWD2zVHxhYFPB6O/edit#gid=1597780211) you can find the file, where I store bug reports - each bug has it's own sheet. Also, I added an actual result in every step of my bug report - it is not necessary, but I find it useful.
 
 ## Subtask 3 - Test report
 
