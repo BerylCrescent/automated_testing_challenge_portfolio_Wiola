@@ -396,7 +396,7 @@ https://scouts-test.futbolkolektyw.pl/en/
 For this task, we need some change - https://dareit.futbolkolektyw.pl/ - and redo the tests on the stage environment of our app. 
 
 For the sake of capturing any occuring bugs on screenshots time.sleep() was added. <br>
-[Link](https://docs.google.com/spreadsheets/d/1MxS2bTjNevnrcf9vLgro9191d_uy7P3g/edit#gid=1461388802) for the Test cases.
+[Link](https://docs.google.com/spreadsheets/d/1MxS2bTjNevnrcf9vLgro9191d_uy7P3g/edit#gid=1461388802) for the Test cases
 
 
 ## Subtask 2 - Bug reporting
