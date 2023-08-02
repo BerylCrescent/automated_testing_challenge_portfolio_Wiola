@@ -31,6 +31,8 @@ class TestRemindPassword(unittest.TestCase):
         remind_password_page.screen_shot_plz('TC_08-1.png')
         remind_password_page.type_in_email('user09@getnada.com')
         remind_password_page.click_on_the_send_button()
+        time.sleep(1)
+        remind_password_page.screen_shot_plz('TC_08-3.png')
         remind_password_page.popup_located()
         remind_password_page.click_on_back_to_sign_in()
         user_login = LoginPage(self.driver)
