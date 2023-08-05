@@ -336,7 +336,7 @@ Prework recording with wait method added avaliable [here](https://drive.google.c
 
 ## Subtask 1 - Writing test cases
 
-[Link](https://docs.google.com/spreadsheets/d/148mOoML0UUtxGtexcV5bTFZzoWZsKeKl/edit?usp=sharing&ouid=100493076818843703891&rtpof=true&sd=true) to the test cases prepared for this task - 7 in total.
+[Link](https://docs.google.com/spreadsheets/d/148mOoML0UUtxGtexcV5bTFZzoWZsKeKl/edit?usp=sharing&ouid=100493076818843703891&rtpof=true&sd=true) to the test cases prepared for this task - 9 in total.
 
 ## Subtask 2 - Writing code based on test cases
 
