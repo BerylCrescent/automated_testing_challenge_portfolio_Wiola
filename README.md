@@ -158,7 +158,6 @@ class Dashboard(BasePage):
     scouts_panel_logo_xpath = "//div[@title='Logo Scouts Panel']"
     shortcuts_panel_xpath = "//h2[text()='Shortcuts']"
     sign_out_button_xpath = "//span[text()='Sign out']"
-    pass
 
 ```
 
@@ -192,7 +191,7 @@ class AddMatchForm(BasePage):
     sign_out_button_xpath = "//span[text()='Sign out']"
     submit_button_xpath = "//button[@type='submit']"
     tshirt_color_field_xpath = "//input[@name='tshirt']"
-    pass
+
 ```
 
 ## Subtask 6 - Merging branches
