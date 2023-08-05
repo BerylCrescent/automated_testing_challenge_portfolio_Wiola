@@ -119,19 +119,25 @@ I am testing the [Scouts test](https://scouts-test.futbolkolektyw.pl/en/login?re
 The following selectors were added to login_page.py:
 
 ```python
-login_field_xpath = "//*[@id='login']"
-password_field_xpath = "//*[@id='password']"
-sign_in_button_xpath = "//button[@type='submit']"
-language_listbox_xpath = "//form/div/div[2]/div/div"
-remind_password_hyperlink_xpath = "//a[text()='Remind password']"
-scouts_panel_text_xpath = "//form/div/div[1]/h5"
+    ident_or_pass_invalid_xpath = "//*[contains(text(),'Identifier')]"
+    language_listbox_xpath = "//div[@aria-haspopup='listbox']"
+    language_list_english_xpath = "//li[@data-value='en']"
+    language_list_polish_xpath = "//li[@data-value='pl']"
+    login_error_notification_xpath = '//form/div/div[1]/div[3]/span'
+    login_field_xpath = "//*[@id='login']"
+    notify_password_email_xpath = "//*[contains(text(),'Please')]"
+    password_field_xpath = "//*[@id='password']"
+    przypomnij_hasło_hyperlink_xpath = "//a[text()='Przypomnij hasło']"
+    remind_password_hyperlink_xpath = "//a[text()='Remind password']"
+    scouts_panel_text_xpath = "//form/div/div[1]/h5"
+    sign_in_button_xpath = "//button[@type='submit']"
 ```
 
 
 ## Subtask 4 - Adding a new file
 
 A new file named Dashboard.py was created.
-The task was to add at leats 10 selectors - I have 19, just for practice purpose. <br>
+The task was to add at leats 10 selectors. <br>
 The following selectors were added:
 
 ```python
@@ -144,7 +150,8 @@ class Dashboard(BasePage):
     dev_team_contact_hyperlink_xpath = "//*[@target='_blank']"
     events_count_xpath = "//div[text()='Events count']"
     last_created_match_xpath = "//h6[text()='Last created match']"
-    last_created_player_xpath = "//h6[text()='Last created player']"
+    last_created_player_text_xpath = "//h6[text()='Last created player']"
+    last_created_player_hyperlink_xpath = "//div[3]/div/div/a[1]/button/span[1]"
     last_updated_match_xpath = "//h6[text()='Last updated match']"
     last_updated_player_xpath = "//h6[text()='Last updated player']"
     last_updated_report_xpath = "//h6[text()='Last updated report']"
@@ -244,11 +251,14 @@ class TestLoginPage(unittest.TestCase):
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
     def test_log_in_to_the_system(self):
-        user_login = LoginPage(self.driver)
+       user_login = LoginPage(self.driver)
+        user_login.title_of_page()
+        user_login.assert_element()
         user_login.type_in_email('user09@getnada.com')
         user_login.type_in_password('Test-1234')
         user_login.click_on_the_sign_in_button()
-        time.sleep(5)
+        dashboard_page = Dashboard(self.driver)
+        dashboard_page.title_of_page()
 
     @classmethod
     def tearDown(self):
@@ -276,7 +286,7 @@ The following was added to BasePage:
         return self.driver.title
 ```
 
-Is dashboard title and login page correct?
+Is the dashboard's and login page's title correct? <br>
 Test passed - the assertion returned true.
 
 
@@ -300,7 +310,7 @@ My solution in login_page.py
 
 ```python
 def assert_element(self):
-        time.sleep(1)
+        self.wait_for_element_to_be_clickable(self.sign_in_button_xpath)
         self.assert_element_text(self.driver, self.scouts_panel_text_xpath, self.expected_text)
 ```
 
