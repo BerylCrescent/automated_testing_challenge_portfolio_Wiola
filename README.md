@@ -8,6 +8,7 @@
 4. [Task 4](#task-4---refactoring-debugger-and-test-cases)
 5. [Task 5](#task-5---robot-framework)
 6. [Task 6](#task-6---bug-reporting-and-test-report)
+7. [Feedback](#feedback)
 <br>
 <br>
 
@@ -427,4 +428,8 @@ For the sake of capturing any occuring bugs on screenshots time.sleep() was adde
 - [x] Create a new repository for your portfolio
 
 Well, thanks to the previous challenge - Become a Manual Tester - I already have a [portfolio](https://github.com/BerylCrescent/Portfolio) created. 
+
+# Feedback
+
+Individual [feedback](https://dareit.notion.site/Individual-Feedback-for-QA-Automated-Testing-Wioletta-Rusiecka-56aea9e3eeff46b6b94d9f5f2b4e476b?pvs=4) for this challenge
 
