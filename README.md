@@ -1,4 +1,5 @@
-<h1 align="center"> :black_nib: Wiola's challenge portfolio </h1>
+<h1 align="center"> Wiola's challenge portfolio <br> ✒️ <br>
+Automated Testing + Python </h1>
 
 
 ### :point_right: Table of contents
